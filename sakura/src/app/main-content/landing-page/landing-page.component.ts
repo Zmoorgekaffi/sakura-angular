@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AtfsectionComponent } from './atfsection/atfsection.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [CommonModule, AtfsectionComponent],
+  imports: [
+    CommonModule,
+    NavbarComponent
+  ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
