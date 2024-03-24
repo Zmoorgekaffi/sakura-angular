@@ -5,6 +5,13 @@
   scroll-behavior: smooth;
 }
 
+$footerHeight: 126px;
+
+@mixin display-flex($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
 
 /* ----------- FONTS ----------- */
 

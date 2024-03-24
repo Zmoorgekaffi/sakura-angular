@@ -1,0 +1,24 @@
+@import "../../styles.scss";
+@mixin button($border-width, $border-color, $background-color,) {
+    width: 48px;
+    height: 24px;
+    border: $border-width solid $border-color;
+}
+
+section {
+    width: 100%;
+    height: calc(100vh - $footerHeight);
+    background-color: rgb(229, 187, 49);
+    @include display-flex($justify-content: space-around);
+    >button {
+        &:nth-child(1) {
+            @include button(3px, blue, red)
+        }
+        &:nth-child(2) {
+            @include button(1px, black, beige)
+        }
+        &:nth-child(3) {
+            @include button(6px, green, orange)
+        }
+    }
+}
